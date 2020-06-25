@@ -12,7 +12,9 @@ def find_min_in_nested_arrays(src)
       if src[outer_count][inner_count]<minimum || minimum <-1
         minimum=src[outer_count][inner_count]
       end
+      inner_count+=1
     end
+    src[outer_count][inner_count].push(lowest_array)
   end
 
 end
